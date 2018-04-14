@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 export default function (Vue) {
 	Vue.axios = axios.create({
-		baseURL: 'https://raywinkelman.com/wp-json/wp/v2/',
+		baseURL: 'https://wp.raywinkelman.com/wp-json/wp/v2/',
 		timeout: Infinity
 	});
 	Vue.axios.interceptors.request.use(function (config) {
