@@ -4,7 +4,7 @@ import router from '@/packages/router'
 import axios from '@/packages/axios'
 
 Vue.config.productionTip = false
-Vue.config.debug = true
+Vue.config.debug = false
 
 Vue.use(axios)
 
