@@ -1,17 +1,17 @@
 <template>
   <div id="app" class="content">
-    <Nav/>
+    <SiteNav/>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Nav from '@/components/Nav'
+import SiteNav from '@/components/Nav'
 
 export default {
   name: 'App',
   components:{
-    Nav
+    SiteNav
   }
 }
 </script>

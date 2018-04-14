@@ -1,20 +1,22 @@
 <template>
-  <nav>
+  <div>
     <img id="site-avatar" src="/static/img/trump.jpg" alt="Avatar">
     <h1 id="site-title" class="link" @click="$router.push('/')">{{ title }}</h1>
-    <h4 id="site-subtitle">{{ subtitle }}</h4>
+    <h4 id="site-subtitle" v-html="quote"></h4>
     <hr>
-  </nav>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'nav',
+  name: 'site-nav',
   data () {
     return {
-      title: 'Ray Winkelman',
-      subtitle: 'im fat cuz every time i f**k ur mom she makes me a sandwich'
+      title: 'Ray Winkelman'
     }
+  },
+  computed: {
+    quote() { return this.$quotes.getRandomQuote(); }
   }
 }
 </script>
@@ -38,6 +40,7 @@ img#site-avatar {
   -webkit-margin-after: 0;
 }
 #site-subtitle {
+  padding-top: 0.4rem;
   text-align: center;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;

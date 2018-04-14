@@ -1,6 +1,7 @@
 <template>
   <div id="post" v-if="post.title">
     <h1 v-html="post.title.rendered"/>
+    <span class="timestamp" v-html="post.modified"/>
     <div v-html="post.content.rendered"/>
   </div>
 </template>
