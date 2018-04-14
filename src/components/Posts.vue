@@ -1,9 +1,9 @@
 <template>
   <div id="posts">
-    <div v-for="post in posts" :key="post.id" :id="post.id" v-if="post.title">
+    <div v-for="(post, i) in posts" :key="post.id" :id="post.id" v-if="post.title">
       <h1 class="link" v-html="post.title.rendered" @click="$router.push(`post/${post.slug}`)"/>
       <div v-html="post.content.rendered"/>
-      <hr>
+      <hr v-if="i!==posts.length-1">
     </div>
   </div>
 </template>
