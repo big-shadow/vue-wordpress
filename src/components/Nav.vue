@@ -13,7 +13,7 @@ export default {
   data () {
     return {
       title: 'Ray Winkelman',
-      subtitle: 'i know im fat. everytime i f**k ur mom she makes me a sandwich'
+      subtitle: 'im fat cuz every time i f**k ur mom she makes me a sandwich'
     }
   }
 }
