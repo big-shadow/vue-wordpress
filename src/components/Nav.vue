@@ -2,7 +2,7 @@
   <nav>
     <img id="site-avatar" src="/static/img/trump.jpg" alt="Avatar">
     <h1 id="site-title" class="link" @click="$router.push('/')">{{ title }}</h1>
-    <h4 id="site-subtitle">much tech bro</h4>
+    <h4 id="site-subtitle">{{ subtitle }}</h4>
     <hr>
   </nav>
 </template>
@@ -12,7 +12,8 @@ export default {
   name: 'nav',
   data () {
     return {
-      title: 'Ray Winkelman'
+      title: 'Ray Winkelman',
+      subtitle: 'i know im fat. everytime i f**k ur mom she makes me a sandwich'
     }
   }
 }
