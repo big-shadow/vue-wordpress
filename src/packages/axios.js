@@ -1,14 +1,7 @@
 import Vue from 'vue'
 
-/*axios.defaults.baseURL = configuration._API_URL_;
-axios.defaults.headers.common['X-API-Token'] = configuration._API_TOKEN_;
-axios.defaults.timeout = configuration._AJAX_TIMEOUT_;
-*/
-
 export default function (Vue) {
 	Vue.axios = axios.create({
-		//baseURL: axios.defaults.baseURL,
-		//timeout: axios.defaults.timeout
 		baseURL: 'https://raywinkelman.com/wp-json/wp/v2/',
 		timeout: Infinity
 	});
@@ -25,7 +18,7 @@ export default function (Vue) {
 		if(Vue.config.debug === true){
 			console.log('Response:', response)
 		}
-		
+
 		return response;
 	}, function (error) {
 		if (error.response) {
