@@ -2,19 +2,20 @@
   <div id="posts">
     <div class="post-nav-links-wrapper">
       <button @click="backPage" class="post-nav-links">Back</button>
+      <span>{{ (totalPages + 1) - page }} of {{ totalPages }}</span>
       <button @click="nextPage" class="post-nav-links">Next</button>
     </div>
-    <hr>
+
     <div v-for="(post, i) in posts" :key="post.id" :id="post.id" v-if="post.title">
-      <h1 class="link" v-html="post.title.rendered" @click="$router.push(`post/${post.slug}`)"/>
-      <span class="timestamp" v-html="post.modified"/>
+      <h1 class="post-title link" v-html="post.title.rendered" @click="$router.push(`post/${post.slug}`)"/>
+      <span v-html="post.modified"/>
       <div v-html="post.content.rendered"/>
       <hr>
       <div class="post-nav-links-wrapper">
         <button @click="backPage" class="post-nav-links">Back</button>
+        <span>{{ (totalPages + 1) - page }} of {{ totalPages }}</span>
         <button @click="nextPage" class="post-nav-links">Next</button>
       </div>
-      <hr>
     </div>
   </div>
 </template>
@@ -86,6 +87,6 @@ button.post-nav-links:visited, button.post-nav-links:active, button.post-nav-lin
 div.post-nav-links-wrapper {
   width: 100%;
   text-align: center;
-  margin: auto;
+  margin: 1.4rem auto;
 }
 </style>
