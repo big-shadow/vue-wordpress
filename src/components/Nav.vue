@@ -26,7 +26,6 @@ div#header {
   padding-top: 1rem;
 }
 img#site-avatar {
-  border: #2ecc71 0px solid;
   border-radius: 50%;
   width: 100%;
   max-width: 100px;
