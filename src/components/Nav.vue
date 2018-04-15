@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <img id="site-avatar" src="/static/img/trump.jpg" alt="Avatar">
+  <div id="header">
+    <img id="site-avatar" src="/static/img/monkey1-square.jpg" alt="Avatar">
     <h1 id="site-title" class="link" @click="$router.push('/')">{{ title }}</h1>
     <h4 id="site-subtitle" v-html="quote"></h4>
     <hr>
@@ -22,11 +22,14 @@ export default {
 </script>
 
 <style scoped>
+div#header {
+  padding-top: 1rem;
+}
 img#site-avatar {
-  border: #2ecc71 2px solid;
+  border: #2ecc71 0px solid;
   border-radius: 50%;
   width: 100%;
-  max-width: 70px;
+  max-width: 100px;
   height: auto;
   display: block;
   margin: auto;

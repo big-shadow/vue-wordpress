@@ -43,16 +43,16 @@ export default function (Vue) {
             '― Morpheus, The Matrix',
 
             '"You Think Darkness Is Your Ally, But You Merely Adopted The Dark. I Was Born In It - Molded By It. I Didn\'t See The Light Until I Was Already A Man. By Then, To Me - It Was Only Blinding. The Shadows Betray You Because They Belong To Me."<br>' +
-            '― Bane in The Dark Knight Rises',
+            '― Bane, The Dark Knight Rises',
 
             '"It\'s Not The Dog In The Fight. It\'s The Fight In The Dog."<br>' +
             '― Rocky',
 
             '"Hope Is For People Who Do Not Already Live In Grace."<br>' +
-            '― Mexican Samaritan on Prison Break',
+            '― Mexican Samaritan, Prison Break',
 
             '"Nobody Loves Me But My Mother, And She Could Be Jive\'n Too."<br>' +
-            '― Blues Singer on the Fresh Prince of Bel Air',
+            '― Blues Singer, Fresh Prince of Bel Air',
 
             '"Fortune Favors The Brave."<br>' +
             '― Latin Proverb',
@@ -124,12 +124,9 @@ export default function (Vue) {
             '― Richard Dawkins',
 
             '"Yo Baby Have You Ever Had Your Asshole Licked By A Fat Man In An Overcoat!?!"<br>' +
-            '― Jay and Silent Bob Strike Back',
+            '― Jay, Jay and Silent Bob Strike Back',
 
-            '"Don\'t Quote Me Boy \'Cause I Ain\'t Said Shit."<br>' +
-            '― ...',
-
-            '"If You Havin\' Girl Problems I Feel Bad For You Son, I Got 99 Problems And A Bitch Ain\'t One."<br>' +
+            '"If You Havin\' Girl Problems I Feel Bad For You Son, I Got 99 Problems And A B*tch Ain\'t One."<br>' +
             '― Jay Z',
 
             '"Birthdays Were The Worst Days, Now We Sip Champagne When We Thirsty."<br>' +
@@ -161,12 +158,6 @@ export default function (Vue) {
 
             '"Got No Time To Be Talkin\' To Insane Chicks, Pretty-Faced But They Sendin\' Me Through Changes."<br>' +
             '― J. Isaac',
-
-            '"I Made Some Changes In My Life, I Regret None Of Them, So If You Ain\'t Heard From Me Then You\'re Probably One Of Them."<br>' +
-            '― Fabulous',
-
-            '"Look At Yourself In The Mirror And Tell Me What A Man Is Without Pride. Tell Me What A Man Is Without Fire in His Eyes. Tell Me Who The Fuck You Are."<br>' +
-            '― Rob Bailey',
 
             '"The God Of The Old Testament Is Arguably The Most Unpleasant Character In All Fiction: Jealous And Proud Of It; A Petty, Unjust, Unforgiving Control-Freak; A Vindictive, Bloodthirsty Ethnic Cleanser; A Misogynistic, Homophobic, Racist, Infanticidal, Genocidal, Filicidal, Pestilential, Megalomaniacal, Sadomasochistic, Capriciously Malevolent Bully."<br>' +
             '― Richard Dawkins',
