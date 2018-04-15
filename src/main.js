@@ -5,7 +5,7 @@ import axios from '@/packages/axios'
 import quotes from '@/packages/quotes'
 
 Vue.config.productionTip = false
-Vue.config.debug = true
+Vue.config.debug = false
 
 Vue.use(axios)
 Vue.use(quotes)

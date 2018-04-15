@@ -111,6 +111,9 @@ export default function (Vue) {
         getRandomQuote(){
             let index = Math.floor(Math.random() * this.quotes.length);
             return this.quotes[index] + ` (Quote ${index}/${this.quotes.length})`;
+        },
+        getQuotes(){
+            return _.clone(this.quotes);
         }
     }
 }

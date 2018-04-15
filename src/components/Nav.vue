@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div class="navbar">
+    <div v-pre class="navbar">
       <router-link to="/">Blogroll</router-link>
+      <router-link to="quotes">Quotes</router-link>
       <div class="dropdown">
         <button class="dropbtn">External Links &darr;</button>
         <div class="dropdown-content">
@@ -12,7 +13,7 @@
       </div> 
     </div>
     <div id="header">
-      <img id="site-avatar" src="/static/img/monkey1-square-grayscale.jpg" alt="Avatar">
+      <img v-pre id="site-avatar" src="/static/img/monkey1-square-grayscale.jpg" alt="Avatar">
       <h1 id="site-title" class="link" @click="$router.push('/')">{{ title }}</h1>
       <h4 id="site-subtitle" v-html="quote"></h4>
     </div>

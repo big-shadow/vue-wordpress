@@ -1,9 +1,9 @@
 <template>
   <div id="posts">
     <div class="post-nav-links-wrapper">
-      <button @click="backPage" class="post-nav-links">Back</button>
-      <span>{{ (totalPages + 1) - page }} of {{ totalPages }}</span>
-      <button @click="nextPage" class="post-nav-links">Next</button>
+      <button @click="backPage" class="post-nav-links"><span>&#171;</span></button>
+      <span>Page {{ page }} of {{ totalPages }}</span>
+      <button @click="nextPage" class="post-nav-links"><span>&#187;</span></button>
     </div>
 
     <div v-for="(post, i) in posts" :key="post.id" :id="post.id" v-if="post.title">
@@ -11,11 +11,12 @@
       <span v-html="post.modified"/>
       <div v-html="post.content.rendered"/>
       <hr>
-      <div class="post-nav-links-wrapper">
-        <button @click="backPage" class="post-nav-links">Back</button>
-        <span>{{ (totalPages + 1) - page }} of {{ totalPages }}</span>
-        <button @click="nextPage" class="post-nav-links">Next</button>
-      </div>
+    </div>
+
+    <div class="post-nav-links-wrapper">
+      <button @click="backPage" class="post-nav-links"><span>&#171;</span></button>
+      <span>Page {{ page }} of {{ totalPages }}</span>
+      <button @click="nextPage" class="post-nav-links"><span>&#187;</span></button>
     </div>
   </div>
 </template>
@@ -50,38 +51,43 @@ export default {
         console.log(e);
       });
     },
-    nextPage(){
+    nextPage: _.debounce(function () {
       if(this.page < this.totalPages){
         this.page++;
         this.getPosts();
       }
-    },
-    backPage(){
+    }, 500, {leading: true, trailing: false}),
+    backPage: _.debounce(function () {
       if(this.page > 1){
         this.page--;
         this.getPosts();
       }
-    }
+    }, 500, {leading: true, trailing: false})
   }
 }
 </script>
 
 <style scoped>
 button.post-nav-links {
-  width: 60px;
-  height: 60px;
+  width: 28px;
+  height: 28px;
   background: none;
   border-radius: 50%;
   border: #27ae60 1px solid;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #ccc;
   margin: 0 6px;
+  padding-bottom: 3px;
+    color: #ccc;
 }
+
+button.post-nav-links > span {
+  text-align: center;
+  font-weight: bold;
+}
+
 button.post-nav-links:visited, button.post-nav-links:active, button.post-nav-links:hover{
     color: #2ecc71;
     border: #2ecc71 1px solid;
+    cursor:pointer;
 }
 
 div.post-nav-links-wrapper {
