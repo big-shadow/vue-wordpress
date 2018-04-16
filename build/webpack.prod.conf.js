@@ -114,6 +114,11 @@ const webpackConfig = merge(baseWebpackConfig, {
         from: path.resolve(__dirname, '../static'),
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
+      },
+      { 
+        from: '.htaccess',
+        toType: 'file',
+        to: config.build.assetsSubDirectory + '/.htaccess'
       }
     ])
   ]

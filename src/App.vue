@@ -19,7 +19,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro');
 
 html {
-    background-color: 	black;
+    background-color: black;
     color: #ccc;
     font-size: 62.5%;
 }
@@ -29,11 +29,11 @@ body {
     font-family: 'Maven Pro', sans-serif;
     font-size: 14px;
     font-size: 1.4rem;
-    background-image: url('/static/img/coffee1.jpg');
+    background-image: url('/static/img/monkey1-square-inverted.jpg');
 }
 
 .content {
-    background-color: 	black;
+    background-color: #0C0C0C;
     margin: 0 auto;
     max-width: 768px;
     padding: 0 3.6rem;
@@ -58,7 +58,7 @@ hr {
     border: 0;
     height: 1px;
     background: #333;
-    background-image: linear-gradient(to right, black, #2ecc71, black);
+    background-image: linear-gradient(to right, transparent, #2ecc71, transparent);
 }
 
 .link, .link:link, a:link {

@@ -2,7 +2,7 @@
   <div>
     <div v-pre class="navbar">
       <router-link to="/">Blogroll</router-link>
-      <router-link to="quotes">Quotes</router-link>
+      <router-link to="/quotes">Quotes</router-link>
       <div class="dropdown">
         <button class="dropbtn">External Links &darr;</button>
         <div class="dropdown-content">
