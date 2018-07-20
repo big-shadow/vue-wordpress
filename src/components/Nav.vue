@@ -3,7 +3,7 @@
     <div v-pre class="navbar">
       <router-link to="/">Blogroll</router-link>
       <div class="dropdown">
-        <button class="dropbtn">External Links &darr;</button>
+        <button class="dropbtn">External Links</button>
         <div class="dropdown-content">
           <a href="https://wp.raywinkelman.com">Wordpress Site</a>
           <a href="https://linkedin.com/in/raywinkelman">LinkedIn</a>
@@ -14,8 +14,9 @@
     <div class="header">
       <!--<img v-pre class="site-avatar" src="/static/img/monkey1-square-grayscale.jpg" alt="Avatar">-->
       <h1 class="site-title" @click="$router.push('/')">{{ title }}</h1>
-      <h4 v-pre class="site-subtitle">a monkey with a keyboard</h4>
+      <h4 v-pre class="site-subtitle">monkey with keyboard</h4>
       <h4 v-pre class="site-subtitle">doin' computer stuff</h4>
+      <h4 v-pre class="site-subtitle">for long time</h4>
     </div>
     <hr>
   </div>

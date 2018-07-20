@@ -139,11 +139,12 @@ img.site-avatar {
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
+  background-color: #f0f0f0;
   display: none;
   position: absolute;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 99999;
 }
 
 /* Links inside the dropdown */
@@ -164,6 +165,7 @@ img.site-avatar {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  background-color: #f0f0f0;
 }
 
 /* --- POSTS ---*/
