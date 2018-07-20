@@ -8,33 +8,32 @@
 
 <script>
 export default {
-  name: 'post',
-  data () {
+  name: "post",
+  data() {
     return {
-      post: { 
+      post: {
         slug: this.$route.params.slug
       }
-    }
+    };
   },
-  created(){
+  created() {
     this.getPost();
   },
-  methods:{
-    getPost(){
-      this.$axios.get('posts', {
-        params: {
+  methods: {
+    getPost() {
+      this.$axios
+        .get("posts", {
+          params: {
             slug: this.$route.params.slug
           }
-      }).then(d => {
-        this.post = d.data[0];
-      }).catch(e => {
-        console.log(e);
-      });
+        })
+        .then(d => {
+          this.post = d.data[0];
+        })
+        .catch(e => {
+          console.log(e);
+        });
     }
   }
-}
+};
 </script>
-
-<style scoped>
-
-</style>

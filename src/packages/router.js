@@ -3,7 +3,6 @@ import Router from 'vue-router'
 
 import Posts from '@/components/Posts'
 import Post from '@/components/Post'
-import Quotes from '@/components/Quotes'
 
 Vue.use(Router)
 
@@ -19,11 +18,6 @@ export default new Router({
       path: '/post/:slug',
       name: 'Post',
       component: Post
-    },
-    {
-      path: '/quotes',
-      name: 'Quotes',
-      component: Quotes
     }
   ]
 })

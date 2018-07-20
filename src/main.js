@@ -1,17 +1,15 @@
-import Vue from 'vue'
-import App from './App'
-import router from '@/packages/router'
-import axios from '@/packages/axios'
-import quotes from '@/packages/quotes'
+import Vue from "vue";
+import App from "./App";
+import router from "@/packages/router";
+import axios from "@/packages/axios";
 
-Vue.config.productionTip = false
-Vue.config.debug = false
+Vue.config.productionTip = false;
+Vue.config.debug = false;
 
-Vue.use(axios)
-Vue.use(quotes)
+Vue.use(axios);
 
 new Vue({
-  el: '#app',
+  el: "#app",
   router,
   render: h => h(App)
-})
+});
