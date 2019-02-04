@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Gaegu|Inconsolata");
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Inconsolata');
 
 html {
   background-color: black;
@@ -11,7 +11,6 @@ body {
   font-family: 'Inconsolata', monospace;
   font-size: 14px;
   font-size: 1.4rem;
-
 }
 
 .content {
@@ -26,7 +25,8 @@ body {
   }
 }
 
-.content img {
+#posts img,
+#post img {
   width: 100%;
   max-width: 260px;
   height: auto;
@@ -38,12 +38,7 @@ hr {
   border: 0;
   height: 1px;
   background: #333;
-  background-image: linear-gradient(
-    to right,
-    #9c9c9c,
-    black,
-    #9c9c9c
-  );
+  background-image: linear-gradient(to right, #9c9c9c, black, #9c9c9c);
 }
 
 .link,
@@ -98,74 +93,91 @@ img.site-avatar {
 
 /* Navbar container */
 .navbar {
+  font-family: 'Gaegu', cursive;
   color: black;
   overflow: hidden;
-}
 
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 14px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: black;
-}
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
 
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    vertical-align: middle;
+  }
 
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 14px;
-  border: none;
-  outline: none;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-  vertical-align: middle;
-}
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    background-color: #f0f0f0;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+  }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: #c9c9c9;
-  color: black;
-}
+  /* Links inside the dropdown */
+  .dropdown-content {
+    a,
+    .nav-link {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+  }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  background-color: #f0f0f0;
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 99999;
-}
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content {
+    .nav-link:hover,
+    a:hover {
+      background-color: #c9c9c9;
+    }
+  }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #f0f0f0;
+  }
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #c9c9c9;
-}
+  /* Links inside the navbar */
+  a,
+  .nav-link {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+  }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-  background-color: #f0f0f0;
+  a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  a:hover,
+  .nav-link:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #c9c9c9;
+    color: black;
+  }
 }
 
 /* --- POSTS ---*/

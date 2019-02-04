@@ -1,17 +1,20 @@
 <template>
-  <div id="app" class="content">
-    <SiteNav/>
-    <router-view/>
+  <div class="content">
+    <site-nav />
+    <transition name="fade">
+      <router-view />
+    </transition>
   </div>
 </template>
-
 <script>
-import SiteNav from "@/components/Nav";
+import SiteNav from 'components/Nav'
 
 export default {
-  name: "App",
   components: {
     SiteNav
   }
-};
+}
 </script>
+<style lang="scss" scoped>
+@import 'styles/variables.scss';
+</style>
